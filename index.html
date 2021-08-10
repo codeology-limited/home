@@ -1,0 +1,36 @@
+<style>
+#thehead{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+font-family: "courier new";
+font-size: 75px;
+
+}
+
+</style>
+<div id="thehead">|-_-|</div>
+<div id=output></div>
+<script>
+function draw( cond, value){
+if (cond){
+document.getElementById("thehead").innerText=value;
+}
+
+}
+
+setInterval( function(){
+const r = Math.floor(Math.random() * 100);
+
+
+draw( r > 10 && r < 20 ,'|-_0|');
+draw( r > 20 && r < 30 ,'|0_-|');
+draw( r > 30 && r < 40 ,'|0_0|');
+draw( r > 40 && r < 50 ,'|o_o|');
+draw( r > 50 && r < 60 ,'|>_<|');
+draw( r > 60 && r < 70 ,'|0_<|');
+
+
+}, 10000);
+</script>
