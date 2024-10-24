@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeology - Expert CSS Services</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional CSS expert offering services to optimize your website's design, performance, and user experience. Contact Codeology today!">
+    <meta name="keywords" content="CSS expert, CSS services, web design, front-end development, responsive design, technical debt, CSS optimization">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Meta Tags for social media -->
+    <meta property="og:title" content="Codeology - Expert CSS Services">
+    <meta property="og:description" content="Professional CSS expert offering services to optimize your website's design, performance, and user experience. Contact Codeology today!">
+    <meta property="og:image" content="path/to/your/image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Codeology - Expert CSS Services">
+    <meta name="twitter:description" content="Professional CSS expert offering services to optimize your website's design, performance, and user experience. Contact Codeology today!">
+    <meta name="twitter:image" content="path/to/your/image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./favicon/android-chrome-512x512.png">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="./favicon/mstile-150x150.png">
+
+    <!-- Theme color (for Android Chrome and Windows) -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+
+    <!-- Domain Prefetching and Preconnecting -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Single+Day&display=swap" rel="stylesheet">
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" as="style">
+    <link rel="preload" href="img/beach.jpg" as="image">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Other Performance-related Headers -->
+    <meta http-equiv="cache-control" content="max-age=31536000, must-revalidate">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Codeology",
+            "url": "https://codeolgy.co.nz",
+            "logo": "https://codeolgy.co.nz/logo.png",
+            "description": "Providing expert CSS services, specializing in reducing technical debt, resolving issues, and optimizing website performance for clients in need of urgent or on-demand support.",
+            "areaServed": {
+                "@type": "Place",
+                "name": "Auckland, New Zealand",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -36.8485,
+                    "longitude": 174.7633
+                }
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+64-2167-7460",
+                "contactType": "Customer Service",
+                "availableLanguage": "English",
+                "email": "tony@codeology.co.nz"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/tony.gurnick",
+                "https://twitter.com/coder451"
+            ],
+            "potentialAction": [
+                {
+                    "@type": "CommunicateAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "sms:+6421677460",
+                        "actionPlatform": ["http://schema.org/AndroidPlatform", "http://schema.org/IOSPlatform"],
+                        "inLanguage": "en"
+                    },
+                    "name": "Send SMS",
+                    "description": "Send a text message for urgent CSS help."
+                },
+                {
+                    "@type": "CommunicateAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "tel:+6421677460",
+                        "actionPlatform": ["http://schema.org/AndroidPlatform", "http://schema.org/IOSPlatform"],
+                        "inLanguage": "en"
+                    },
+                    "name": "Call Us",
+                    "description": "Call us for immediate support."
+                },
+                {
+                    "@type": "CommunicateAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "mailto:tony@codeology.co.nz",
+                        "actionPlatform": "http://schema.org/EmailMessage",
+                        "inLanguage": "en"
+                    },
+                    "name": "Send an Email",
+                    "description": "Send an email to discuss CSS support."
+                }
+            ]
+        }
+
+    </script>
+    <!-- CSS -->
+    <style>
+
+        :root {
+            /* Base font settings */
+            --base-font-size: 16px;
+            --font-family-main: 'Noto Sans JP', sans-serif;
+            --text-color: #444;
+            --line-height: 1.6;
+
+            /* Container */
+            --container-width: 90%;
+            --container-max-width: 1200px;
+
+            /* Header */
+            --header-bg-color: #f8f8f8;
+            --header-padding: 1rem 0;
+            --header-title-font-size: clamp(2rem, 5vw, 3rem);
+            --header-title-color: #111;
+            --header-title-span-color: #555555;
+
+            /* Navigation */
+            --nav-margin-top: 1rem;
+            --nav-link-color: #444;
+            --nav-link-hover-color: #000;
+            --nav-link-font-weight: 500;
+            --nav-margin-right: 1.5rem;
+
+            /* Hero Section */
+            --hero-bg-color: rgba(0, 0, 0, 0.2);
+            --hero-text-color: #fff;
+            --hero-padding: 5rem 0;
+            --hero-title-font-size: clamp(2rem, 6vw, 4rem);
+            --hero-paragraph-font-size: 1.5rem;
+            --hero-paragraph-margin-bottom: 2rem;
+
+            /* Services Section */
+            --services-padding: 4rem 0;
+            --service-bg-color: rgba(0, 0, 0, 0.2);
+            --service-border-radius: 5px;
+            --service-padding: 2rem;
+            --service-title-font-size: 1.8rem;
+            --service-paragraph-font-size: 1.2rem;
+            --service-margin-bottom: 1rem;
+
+            /* About Me Section */
+            --about-padding: 4rem 0;
+            --about-title-margin-bottom: 2rem;
+            --about-paragraph-max-width: 800px;
+            --about-paragraph-font-size: 1.2rem;
+            --about-paragraph-margin: 0 auto;
+
+            /* Portfolio Section */
+            --iframe-border: 4px solid #f0f0f0;
+
+            /* Footer */
+            --footer-bg-color: #222;
+            --footer-text-color: #fff;
+            --footer-padding: 1rem 0;
+            --footer-margin-top: 10vh;
+            --footer-text-font-size: 1rem;
+
+            /* Button Bar */
+            --button-bar-width: 64px;
+            --button-bar-height: 64px;
+            --button-bar-gap: 10px;
+            --button-bar-text-color: white;
+            --button-bar-font-size: 14px;
+            --button-bar-font-weight: bold;
+            --button-bar-border-radius: 5px;
+            --button-bar-border-color-checked: #007bff;
+
+            /* Theme colors */
+            --theme-option1-bg-color: #f4b400;
+            --theme-option2-bg-color: #f0f0f0;
+            --theme-option2-text-color: black;
+            --theme-option3-bg-color: #2b2b2b;
+            --theme-option4-bg-color: #e6397d;
+            --theme-option5-bg-color: #f05400;
+
+            /* Halloween Theme Colors */
+            --halloween-header-bg-color: #5a2d82;
+            --halloween-header-text-color: #ff7518;
+            --halloween-title-color: #ff7518;
+            --halloween-span-color: #8A0707;
+            --halloween-button-bg-color: #00ff00;
+            --halloween-button-text-color: #1c1c1c;
+            --halloween-button-border-color: #ff7518;
+            --halloween-footer-bg-color: #5a2d82;
+            --halloween-footer-text-color: #00ff00;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base font settings */
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #444;
+            line-height: 1.6;
+        }
+
+
+
+
+        /* Global styles */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #444;
+            line-height: 1.6;
+        }
+
+
+        p {
+            text-wrap: pretty;
+        }
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
+        header {
+            xbackground-color: #f8f8f8;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #111;
+        }
+
+        header h1 span {
+            color: #555555;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: rgba(0,0,0,0.2);
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        #hero h2 {
+            font-size: clamp(2rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+
+        /* Services Section */
+        #services {
+            padding: 4rem 0;
+
+        }
+
+        #services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 2/1;
+
+            flex: 1 1 calc(50% - 2rem);
+            background-color: rgba(0,0,0,0.2);
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            text-wrap: pretty;
+        }
+
+        .service h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .service p {
+            font-size: 1.2rem;
+        }
+
+        /* About Me Section */
+        #about {
+            padding: 4rem 0;
+        }
+
+        #about h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        /* Portfolio Section */
+        iframe {
+            border: 4px solid #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 10vh;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 100%;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+        }
+
+
+        /*
+            Components
+        */
+        .button-bar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+
+            gap: 10px; /* Adds spacing between buttons */
+        }
+
+        .button-bar fieldset {
+            border: 0;
+            legend {
+                display:none;
+            }
+            display: flex;
+            flex-direction: row;
+
+
+            label {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin-left: 5px;
+                padding: 0;
+                text-indent: -10000px;
+                line-height: 64px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+                color: white; /* Default button text color */
+                border: 1px solid #ccc; /* Thin border */
+                background: #f4b400; /* Vibrant yellow-orange */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), /* Light shadow below */
+                0 1px 0 rgba(255, 255, 255, 0.1) inset; /* Subtle inset for flat look */
+
+            }
+            label:nth-of-type(2){
+                background-color: #f0f0f0; /* Soft light grey */
+                color: black; /* Dark text on light button */
+            }
+
+            label:nth-of-type(3){
+                background-color: #2b2b2b; /* Deep charcoal */
+                color: white; /* Dark text on light button */
+            }
+
+            label:nth-of-type(4){
+                background-color: #e6397d; /* Vibrant pink */
+            }
+
+            label:nth-of-type(5){
+                background-color: #5a2d82; /* Burnt orange */
+            }
+
+        }
+
+
+
+        .button-bar input[type="radio"] {
+            display: none;
+        }
+
+
+        /* Checked button styles */
+        .button-bar input[type="radio"]:checked + label {
+            border: 3px solid #007bff; /* Highlight checked button */
+        }
+
+        /* THEMES */
+
+
+        body:has(input[name="options"][value="option1"]:checked) {
+            background: #f4b400; /* Vibrant yellow-orange */
+            zoom: 1;
+        }
+
+        body:has(input[name="options"][value="option2"]:checked) {
+            background: #f0f0f0; /* Soft light grey */
+        }
+
+        body:has(input[name="options"][value="option3"]:checked) {
+            background: #2b2b2b; /* Deep charcoal */
+        }
+
+        body:has(input[name="options"][value="option4"]:checked) {
+            background: #e6397d; /* Vibrant pink */
+        }
+
+        body:has(input[name="options"][value="option5"]:checked) {
+            background: #f05400; /* Burnt orange */
+        }
+
+
+        /* Base theme for Option 5 (Halloween Theme) */
+        body:has(input[name="options"][value="option5"]:checked) {
+            xbackground-color: #1c1c1c; /* Dark spooky background */
+            background-color: #5a2d82; /* Deep purple */
+            color: #f8f8f8; /* Light text */
+        }
+
+        /* Halloween Header */
+
+        body:has(input[name="options"][value="option5"]:checked) {
+            header {
+                background-color: #5a2d82; /* Deep purple */
+                color: #ff7518; /* Pumpkin orange */
+            }
+
+            h1 {
+                position: relative;
+                z-index: 1;
+                font-family: "Nosifer", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: clamp(2rem, 5vw, 3rem);
+                transform: scaleY(3); /* Stretch vertically by 3 times */
+                transform-origin: top; /* Stretch from the bottom upwards */
+
+                display: inline-block; /* Ensure the h1 respects inline-size */
+                max-inline-size: 50%; /* Restrict the width to 30% */
+                overflow-wrap: break-word; /* Ensure long text wraps within the block */
+                color: #ff7518;
+            }
+
+            h1 span {
+                color: #8A0707; /* Color for the span inside h1 */
+            }
+
+            h2 {
+                font-size: clamp(2rem, 6vw, 4rem);
+                font-family: "Creepster", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            ul {
+                padding-top: 60px;
+                position: relative;
+                z-index: 2;
+            }
+
+            p,a {
+                font-family: "Single Day", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+            a {
+                color: #00ff00;
+
+                :hover, :focus {
+                    color: #ff7518;
+                }
+            }
+        }
+
+
+
+        /* Halloween Buttons */
+        body:has(input[name="options"][value="option5"]:checked) .btn {
+            background-color: #00ff00; /* Glowing green */
+            color: #1c1c1c; /* Dark contrast */
+            border: 2px solid #ff7518; /* Pumpkin orange border */
+        }
+
+        body:has(input[name="options"][value="option5"]:checked) .btn:hover,
+        body:has(input[name="options"][value="option5"]:checked) .btn:focus {
+            background-color: #ff7518; /* Pumpkin orange on hover */
+            color: #1c1c1c; /* Dark text */
+        }
+
+        /* Halloween Footer */
+        body:has(input[name="options"][value="option5"]:checked) footer {
+            background-color: #5a2d82; /* Deep purple */
+            color: #00ff00; /* Glowing green text */
+        }
+
+
+
+
+        body:has(input[name="options"][value="option5"]:checked) .service {
+            background: rgba(0,0,0,0.2);
+            color: #ff7518; /* Pumpkin orange text */
+            border: 2px solid #00ff00; /* Glowing green border */
+
+
+        }
+
+        body:has(input[name="options"][value="option5"]:checked) #about .halloween {
+            text-transform: uppercase;
+            color: #8A0707; /* Blood Red */
+            font-size: 2rem;
+            font-weight: 900;
+            text-shadow:
+                    3px 3px 0 #000,    /* Black shadow for depth */
+                    -3px -3px 5px #FF00FF, /* Magenta glow */
+                    4px 4px 10px rgba(0, 0, 0, 0.7), /* Dark, blurry shadow */
+                    0 0 20px #00FF00,  /* Green glow for eerie effect */
+                    0 0 30px #00FF00;  /* More green glow for extra spookiness */
+            background-color: #4B0082; /* Deep Purple Background */
+        }
+
+        /* Halloween iframe borders */
+        body:has(input[name="options"][value="option5"]:checked) iframe {
+            border: 4px solid #ff7518; /* Pumpkin orange border */
+        }
+
+
+
+
+
+        /*  PUMPKIN */
+
+
+
+        body:has(input[name="options"][value="option5"]:checked) {
+
+            .pumpkin{
+                height: 11em;
+                width: 15em;
+                background: #f68632;
+                border: 0.4em solid #a14907;
+                border-radius: 70%/110%;
+                position: relative;
+                box-shadow: inset 0 0px 20px #a14907, 0 0 30px -4px red;
+                z-index: 1;
+            }
+
+            .pumpkin .surface{
+                height: 10.8em;
+                width: 6.5em;
+                position: absolute;
+                bottom: -0.4em;
+                left: 4em;
+                border-radius: 70%/110%;
+                border-bottom: 0.5em solid #a14907;
+                border-top: 0.5em solid #a14907;
+            }
+
+            .pumpkin .surface:after{
+                content: "";
+                display: block;
+                height: 10.7em;
+                width: 12em;
+                position: absolute;
+                bottom: -0.4em;
+                left: -2.5em;
+                border-radius: 70%/110%;
+                border-bottom: .05em solid #a14907;
+                border-top: 0.5em solid #a14907;
+            }
+
+            .pumpkin .stem{
+                background: #517f54;
+                height: 2.8em;
+                width: 1.25em;
+                position: absolute;
+                left: calc(7.5em - 0.625em);
+                top: -2.7em;
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+                border-radius: 30% 20% 70% 10%;
+                z-index: -1;
+                box-shadow: inset 0 0px 10px #29412b;
+            }
+
+            .pumpkin .eye{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 0.8em solid transparent;
+                top: 2.8em;
+            }
+
+            .pumpkin .eye.right{
+                right: 3.7em;
+                -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+                border-bottom: 2.1em solid transparent;
+                border-left: 2.4em solid #401d03;
+            }
+
+            .pumpkin .eye.left{
+                left: 3.7em;
+                -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+                border-bottom: 2.1em solid transparent;
+                border-right: 2.4em solid #401d03;
+            }
+
+            .pumpkin .mouth{
+                width: 4em;
+                height: 2em;
+                position: absolute;
+                bottom: 1.5em;
+                border-bottom: 1em solid #401d03;
+            }
+
+            .pumpkin .mouth.right{
+                right: 3.6em;
+                border-radius: 0 0 100% 0;
+            }
+
+            .pumpkin .mouth.left{
+                left: 3.6em;
+                border-radius: 0 0 0 100%;
+            }
+
+            .pumpkin .teeth{
+                width: 0.5em;
+                height: 1em;
+                position: absolute;
+                top: 7.7em;
+                left: 7.25em;
+                border-top: 0.8em solid transparent;
+                border-bottom: 0em solid transparent;
+                border-left: 0.8em solid #401d03;
+            }
+
+            .pumpkin .teeth:before, .pumpkin .teeth:after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 0.8em solid transparent;
+            }
+
+            .pumpkin .teeth:before{
+                right: 2.2em;
+                top: -0.65em;
+                -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+                border-bottom: 0.5em solid transparent;
+                border-left: 1em solid #401d03;
+            }
+
+            .pumpkin .teeth:after{
+                left: 1em;
+                top: -0.85;
+                -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+                border-bottom: 0.5em solid transparent;
+                border-left: 1em solid #401d03;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <h1>Code<span>ology</span></h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#services">What I do</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <form class="button-bar">
+        <fieldset>
+            <legend>Select an option</legend>
+            <label for="option1">
+                <input type="radio" id="option1" name="options" value="option1" aria-checked="true" checked>
+                Option 1
+            </label>
+            <label for="option2">
+                <input type="radio" id="option2" name="options" value="option2" aria-checked="false">
+                Option 2
+            </label>
+            <label for="option3">
+                <input type="radio" id="option3" name="options" value="option3" aria-checked="false">
+                Option 3
+            </label>
+            <label for="option4">
+                <input type="radio" id="option4" name="options" value="option4" aria-checked="false">
+                Option 4
+            </label>
+            <label for="option5">
+                <input type="radio" id="option5" name="options" value="option5" aria-checked="false">
+                Option 5
+            </label>
+        </fieldset>
+    </form>
+</header>
+
+<!-- Hero Section with Call to Action -->
+<section id="hero">
+    <div class="container">
+        <h2>Your CSS Expert</h2>
+        <p>Transforming websites by eliminating technical debt and optimizing front-end performance.</p>
+        <a href="sms:+6421677460" class="btn" aria-label="Call us at 021-677-460">021-677-460</a>
+        <a href="mailto:tony@codeology.co.nz" class="btn" aria-label="Send an email to tony@codeology.co.nz">tony@codeology.co.nz</a>
+
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>What I do.</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Embed</h3>
+                <p>Seamlessly <strong>integrate into your project</strong>, bringing <strong>CSS skills</strong> on <strong>short notice</strong> to fill any gaps or reinforce your team's capabilities.</p>
+
+
+            </div>
+            <div class="service">
+                <h3>Untangle</h3>
+                <p>CSS technical debt.  It  giving your team a <strong>capacity boost</strong> when it is needed.</p>
+            </div>
+            <div class="service">
+                <h3>Collaborate</h3>
+                <p>Work with design to find the balance between pixel perfect and responsive design.</p>
+            </div>
+            <div class="service">
+                <h3>Consulte</h3>
+                <p>Provide technical direction for your project.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>With <strong>more than a decade</strong> of experience in front-end development  <strong>I can help you out
+            of <span class="halloween">CSS hell</span></strong> and help to <strong>reduce or eliminate CSS technical debt</strong>.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="portfolio">
+    <div class="container">
+        <h2>What I have done.</h2>
+        <div class="service-list">
+            <div class="service">
+                <iframe src="https://pawprintpetition.co.nz"></iframe>
+            </div>
+            <div class="service">
+                <iframe src="https://bettersaver.co.nz"></iframe>
+            </div>
+            <div class="service">
+                <iframe src="https://getforsite.com"></iframe>
+            </div>
+            <div class="service">
+                <iframe src="https://getforsite.com"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Codeology. All rights reserved.</p>
+    </div>
+
+    <div class="pumpkin">
+        <div class="surface"></div>
+        <div class="stem"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth left"></div>
+        <div class="mouth right"></div>
+        <div class="teeth"></div>
+    </div>
+
+</footer>
+
+</body>
+</html>
