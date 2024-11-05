@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Introduction to HTML and CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>From Zero to Hero: A Beginner’s Guide to HTML and CSS</h1>
+    <nav aria-label="Course Navigation">
+        <ul>
+            <li><a href="#lesson1">Lesson 1</a></li>
+            <li><a href="#lesson2">Lesson 2</a></li>
+            <li><a href="#lesson3">Lesson 3</a></li>
+            <!-- Add more lessons as needed -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="lesson1" aria-labelledby="lesson1-title">
+        <h2 id="lesson1-title">Lesson 1: Introduction to HTML and CSS</h2>
+
+        <article>
+            <h3>Objective</h3>
+            <p>By the end of this lesson, you will understand the basic structure of an HTML document, the purpose of CSS, and how to apply simple styles to your web pages.</p>
+        </article>
+
+        <article>
+            <h3>1. What is HTML?</h3>
+            <p><strong>HTML</strong> (HyperText Markup Language) is the standard language for creating web pages. It structures the content on the web, such as text, images, and links.</p>
+
+            <h4>Basic Structure:</h4>
+            <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+
+            <h4>Explanation of Tags:</h4>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML.</li>
+                <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+                <li><code>&lt;head&gt;</code>: Contains meta-information about the document.</li>
+                <li><code>&lt;title&gt;</code>: Sets the title of the page (shown in the browser tab).</li>
+                <li><code>&lt;body&gt;</code>: Contains the visible content of the web page.</li>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Header tags, with <code>&lt;h1&gt;</code> being the highest level.</li>
+                <li><code>&lt;p&gt;</code>: Paragraph tag for text content.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>2. What is CSS?</h3>
+            <p><strong>CSS</strong> (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. It controls the layout, colors, fonts, and overall visual appearance of web pages.</p>
+
+            <h4>Basic Syntax:</h4>
+            <pre><code class="language-css">
+selector {
+  property: value;
+}
+                </code></pre>
+
+            <h4>Example:</h4>
+            <pre><code class="language-css">
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+                </code></pre>
+        </article>
+
+        <article>
+            <h3>3. Applying CSS to HTML</h3>
+
+            <h4>Inline CSS:</h4>
+            <p>Styles applied directly within HTML elements using the <code>style</code> attribute.</p>
+            <pre><code class="language-html">
+&lt;h1 style="color: blue; font-size: 24px;"&gt;Welcome to My Website&lt;/h1&gt;
+                </code></pre>
+            <p><strong>Pros:</strong> Quick and easy for small changes.</p>
+            <p><strong>Cons:</strong> Not reusable, can clutter HTML code.</p>
+
+            <h4>Internal CSS:</h4>
+            <p>Styles defined within the <code>&lt;style&gt;</code> tag inside the <code>&lt;head&gt;</code> section of an HTML document.</p>
+            <pre><code class="language-html">
+&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: blue;
+      font-size: 24px;
+    }
+    p {
+      color: gray;
+      font-size: 16px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+                </code></pre>
+            <p><strong>Pros:</strong> Keeps styles separate from content, easier to manage than inline.</p>
+            <p><strong>Cons:</strong> Styles are confined to a single HTML document.</p>
+
+            <h4>External CSS:</h4>
+            <p>Styles defined in an external <code>.css</code> file and linked to the HTML document using the <code>&lt;link&gt;</code> tag.</p>
+            <pre><code class="language-html">
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+                </code></pre>
+            <pre><code class="language-css">
+/* styles.css */
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+p {
+  color: gray;
+  font-size: 16px;
+}
+                </code></pre>
+            <p><strong>Pros:</strong> Reusable across multiple HTML documents, keeps HTML clean, easier maintenance.</p>
+            <p><strong>Cons:</strong> Requires additional HTTP request (though mitigated with caching).</p>
+        </article>
+
+        <article>
+            <h3>4. Hands-On Exercise: Creating Your First Web Page</h3>
+            <ol>
+                <li>
+                    <strong>Step 1:</strong> Open a text editor (e.g., Notepad, VS Code).
+                </li>
+                <li>
+                    <strong>Step 2:</strong> Create a new file named <code>index.html</code> and add the basic HTML structure.
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;style&gt;
+      h1 {
+        color: blue;
+        font-size: 24px;
+      }
+      p {
+        color: gray;
+        font-size: 16px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                </li>
+                <li>
+                    <strong>Step 3:</strong> Add a header (<code>&lt;h1&gt;</code>) and a paragraph (<code>&lt;p&gt;</code>) to the <code>&lt;body&gt;</code>.
+                </li>
+                <li>
+                    <strong>Step 4:</strong> Apply internal CSS to style the header and paragraph.
+                </li>
+                <li>
+                    <strong>Step 5:</strong> Save the file and open it in a web browser to see your styled web page.
+                </li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>5. Summary and Next Steps</h3>
+            <ul>
+                <li>Recap of HTML and CSS basics.</li>
+                <li>Importance of separating content (HTML) from presentation (CSS).</li>
+                <li>Preview of what’s coming in the next lessons.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">W3Schools CSS Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML Basics</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" rel="noopener noreferrer">MDN Web Docs - CSS Basics</a></li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Assignment</h3>
+            <p>Create a simple web page with a header, a few paragraphs, and apply different styles using internal and external CSS. Experiment with colors, fonts, and sizes.</p>
+        </article>
+    </section>
+
+    <section id="course-overview" aria-labelledby="course-overview-title">
+        <h2 id="course-overview-title">Course Overview: Lesson Titles</h2>
+
+        <article>
+            <h3>Module 1: Getting Started</h3>
+            <ol>
+                <li>Lesson 1: Introduction to HTML and CSS</li>
+                <li>Lesson 2: Structuring Your Web Page with HTML</li>
+                <li>Lesson 3: Styling Text and Layouts with CSS</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Module 2: Intermediate HTML and CSS</h3>
+            <ol start="4">
+                <li>Lesson 4: Working with Lists, Links, and Images</li>
+                <li>Lesson 5: CSS Box Model and Positioning</li>
+                <li>Lesson 6: Responsive Design Basics</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Module 3: Advanced CSS Techniques</h3>
+            <ol start="7">
+                <li>Lesson 7: Flexbox Fundamentals</li>
+                <li>Lesson 8: CSS Grid Layout</li>
+                <li>Lesson 9: Typography and Fonts in CSS</li>
+                <li>Lesson 10: Advanced Selectors and Pseudo-Classes</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Module 4: Enhancing Your Web Pages</h3>
+            <ol start="11">
+                <li>Lesson 11: CSS Animations and Transitions</li>
+                <li>Lesson 12: Working with Forms and Input Styles</li>
+                <li>Lesson 13: Implementing CSS Frameworks (Bootstrap Basics)</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Module 5: Best Practices and Optimization</h3>
+            <ol start="14">
+                <li>Lesson 14: Writing Clean and Maintainable CSS</li>
+                <li>Lesson 15: CSS Preprocessors (Sass Introduction)</li>
+                <li>Lesson 16: Optimizing CSS for Performance</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Module 6: Project-Based Learning</h3>
+            <ol start="17">
+                <li>Lesson 17: Building a Personal Portfolio Page</li>
+                <li>Lesson 18: Creating a Responsive Blog Layout</li>
+                <li>Lesson 19: Designing a Landing Page for a Product</li>
+                <li>Lesson 20: Final Project: Comprehensive Web Page Design</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Supplementary Materials</h3>
+            <ul>
+                <li>Lesson 21: Debugging HTML and CSS</li>
+                <li>Lesson 22: Accessibility in Web Design</li>
+                <li>Lesson 23: Introduction to CSS Variables and Custom Properties</li>
+                <li>Lesson 24: Integrating CSS with JavaScript Basics</li>
+                <li>Lesson 25: Deploying Your Web Page Online</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Conclusion</h3>
+            <ul>
+                <li>Lesson 26: Recap and Next Steps in Web Development</li>
+                <li>Lesson 27: Additional Resources and Continued Learning Paths</li>
+                <li>Lesson 28: Certification and Showcasing Your Work</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="additional-tips" aria-labelledby="additional-tips-title">
+        <h2 id="additional-tips-title">Additional Tips for Success</h2>
+        <ul>
+            <li><strong>Practice Regularly:</strong> The more you practice writing HTML and CSS, the more comfortable you'll become.</li>
+            <li><strong>Experiment with Styles:</strong> Don’t be afraid to try different colors, fonts, and layouts to see what works best.</li>
+            <li><strong>Use Developer Tools:</strong> Familiarize yourself with browser developer tools (like Chrome DevTools) to inspect and debug your code.</li>
+            <li><strong>Join Communities:</strong> Engage with online communities (such as <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">Stack Overflow</a>, <a href="https://www.reddit.com/r/webdev/" target="_blank" rel="noopener noreferrer">Reddit’s r/webdev</a>, or <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>) to ask questions and share knowledge.</li>
+            <li><strong>Build Projects:</strong> Apply what you’ve learned by building real projects. This reinforces your skills and builds your portfolio.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024, From Zero to Hero. All rights reserved.</p>
+</footer>
+</body>
+</html>
